@@ -1,5 +1,5 @@
 import PostsPage from './components/PostsPage'
-
+import CountContext from './contexts/CountContext'
 
 
 function App() {
@@ -7,7 +7,10 @@ function App() {
 
   return (
     <>
-      <PostsPage />
+      <CountContext.Provider value={{ count: 1 }}>
+
+        <PostsPage />
+      </CountContext.Provider >
     </>
   )
 }
