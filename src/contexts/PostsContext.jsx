@@ -1,6 +1,6 @@
 import React from 'react'
 import { createContext } from 'react'
 
-const CountContext = createContext();
+const PostContext = createContext();
 
-export default CountContext
+export default PostContext

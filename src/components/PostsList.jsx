@@ -1,12 +1,12 @@
 import React from 'react'
 import { useContext } from 'react';
-import CountContext from '../contexts/CountContext';
+import PostContext from '../contexts/PostsContext';
 import PostCard from './PostCard';
 
 
 const PostsList = () => {
 
-    let { posts } = useContext(CountContext);
+    let { posts } = useContext(PostContext);
 
     return (
         <>
