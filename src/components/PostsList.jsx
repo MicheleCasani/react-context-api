@@ -9,9 +9,19 @@ const posts = [
 
 const PostsList = () => {
     return (
-        <div>
+        <>
+            {posts.map((post) => (
+                <div key={post.id}
+                    className='col-12 col-md-4 col-lg-3 my-3'>
+                    <h2>{post.title}</h2>
+                    <p>{post.content}</p>
+                    <p>{post.category}</p>
+                </div>
+            ))}
 
-        </div>
+
+
+        </>
     )
 }
 
