@@ -13,9 +13,15 @@ const PostsList = () => {
             {posts.map((post) => (
                 <div key={post.id}
                     className='col-12 my-4'>
-                    <h2>{post.title}</h2>
-                    <p>{post.content}</p>
-                    <p>{post.category}</p>
+                    <div className="card flex-fill my-3">
+                        <div className="card-body">
+                            <h5 className="card-title">{post.title}</h5>
+                            <p className="card-text">{post.content}</p>
+                        </div>
+                        <ul className="list-group list-group-flush">
+                            <li className="list-group-item">{post.category} </li>
+                        </ul>
+                    </div>
                 </div>
             ))}
 
